@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWEAT | Mutfaktaki Akıllı Asistanınız</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); }
+        .hero-shape { position: absolute; top: -10%; right: -5%; width: 500px; height: 500px; background: rgba(16, 185, 129, 0.1); border-radius: 50%; filter: blur(80px); z-index: -1; }
+        .play-btn { background: #202124; transition: transform 0.3s ease; }
+        .play-btn:hover { transform: translateY(-3px); background: #000; }
+        .feature-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .feature-card:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <div class="hero-shape"></div>
+
+    <nav class="glass-nav sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-emerald-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-emerald-200">
+                    <i class="fas fa-utensils text-lg"></i>
+                </div>
+                <span class="text-2xl font-extrabold tracking-tighter text-slate-800">WWEAT</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-semibold text-slate-500 text-sm">
+                <a href="#ozellikler" class="hover:text-emerald-500 transition-colors">Özellikler</a>
+                <a href="#aslanhan" class="hover:text-emerald-500 transition-colors">Aslanhan Labs</a>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.aslanhan.wweat" class="bg-emerald-500 text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-md hover:bg-emerald-600 transition-all">Hemen İndir</a>
+        </div>
+    </nav>
+
+    <section class="pt-20 pb-32 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <span class="bg-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 inline-block">Mutfakta Devrim</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-8">
+                    Dolaptaki Malzemeler <br><span class="text-emerald-500">Sanata Dönüşsün.</span>
+                </h1>
+                <p class="text-lg text-slate-500 mb-10 leading-relaxed max-w-lg">
+                    "Bugün ne pişirsem?" derdine son. WWEAT, elindeki malzemeleri analiz eder ve sana en lezzetli tarifleri anında sunar.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://play.google.com/store/apps/details?id=com.aslanhan.wweat" class="play-btn text-white px-8 py-4 rounded-2xl flex items-center gap-4 shadow-xl">
+                        <i class="fab fa-google-play text-3xl"></i>
+                        <div class="text-left">
+                            <p class="text-[10px] opacity-70 leading-none">GET IT ON</p>
+                            <p class="text-xl font-bold leading-tight">Google Play</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative" data-aos="zoom-in" data-aos-delay="200">
+                <div class="bg-emerald-500 w-full aspect-square rounded-[3rem] rotate-3 absolute inset-0 opacity-10"></div>
+                <div class="bg-white p-4 rounded-[2.5rem] shadow-2xl relative z-10 border border-slate-100">
+                    <div class="bg-slate-100 rounded-[2rem] h-[500px] flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-6xl text-slate-300"></i>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ozellikler" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Neden WWEAT?</h2>
+                <div class="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="feature-card p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100" data-aos="fade-up">
+                    <div class="w-14 h-14 bg-emerald-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-emerald-100">
+                        <i class="fas fa-brain text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Akıllı Eşleşme</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm">Sadece sahip olduğun malzemeleri seç, algoritma senin için en uygun tarifleri puanlasın.</p>
+                </div>
+
+                <div class="feature-card p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-orange-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-orange-100">
+                        <i class="fas fa-heart-circle-check text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Alerjen Koruması</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm">Profilindeki alerjileri belirle, sana zarar verebilecek hiçbir tarifi görme. Güvenlik önceliğimiz.</p>
+                </div>
+
+                <div class="feature-card p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-blue-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-100">
+                        <i class="fas fa-list-check text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Dinamik Alışveriş</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm">Tarif seçildiğinde eksik olanlar anında listende. Markette ne alacağını şaşırma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="aslanhan" class="bg-slate-900 text-slate-400 py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+                <div class="text-center md:text-left">
+                    <h2 class="text-white text-3xl font-black italic mb-2 tracking-tighter">Aslanhan Labs</h2>
+                    <p class="text-sm">Geleceğin mutfak teknolojilerini bugünden kodluyoruz.</p>
+                </div>
+                <div class="flex gap-8 text-sm font-semibold uppercase tracking-widest">
+                    <a href="./app-ads.txt" class="hover:text-emerald-400 transition-colors">app-ads.txt</a>
+                    <a href="#" class="hover:text-emerald-400 transition-colors">Gizlilik</a>
+                    <a href="#" class="hover:text-emerald-400 transition-colors">Destek</a>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-16 pt-8 text-center text-xs">
+                &copy; 2026 Aslanhan Labs. Tüm hakları saklıdır. <br>
+                <span class="mt-2 inline-block text-emerald-500/50">Designed for the future of taste.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
