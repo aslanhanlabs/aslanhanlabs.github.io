@@ -20,6 +20,8 @@
         .play-btn:hover { transform: translateY(-3px); background: #000; }
         .feature-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         .feature-card:hover { transform: scale(1.05); }
+        /* Logo ve İkon için yumuşak köşe standardı */
+        .app-icon-radius { border-radius: 22.5%; } 
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -29,9 +31,7 @@
     <nav class="glass-nav sticky top-0 z-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-emerald-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-emerald-200">
-                    <i class="fas fa-utensils text-lg"></i>
-                </div>
+                <img src="assets/icon.png" alt="WWEAT Logo" class="w-10 h-10 app-icon-radius shadow-md shadow-emerald-100">
                 <span class="text-2xl font-extrabold tracking-tighter text-slate-800">WWEAT</span>
             </div>
             <div class="hidden md:flex gap-8 font-semibold text-slate-500 text-sm">
@@ -65,31 +65,30 @@
             </div>
 
             <div class="relative" data-aos="zoom-in" data-aos-delay="200">
-    <div class="bg-emerald-500 w-full aspect-square rounded-[3rem] rotate-3 absolute inset-0 opacity-10"></div>
-    
-    <div class="bg-white p-6 rounded-[2.5rem] shadow-2xl relative z-10 border border-slate-100">
-        <div class="bg-gradient-to-b from-slate-50 to-white rounded-[2rem] h-[500px] flex flex-col items-center justify-center overflow-hidden p-8">
-            
-            <div class="relative group mb-8">
-                <div class="absolute inset-0 bg-emerald-400 blur-3xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
-                <img src="assets/icon.png" 
-                     alt="WWEAT App Icon" 
-                     class="relative z-10 w-32 h-32 md:w-44 md:h-44 rounded-[2.5rem] shadow-2xl border-4 border-white object-cover transform group-hover:rotate-6 transition-transform duration-500">
-            </div>
-
-            <div class="text-center z-10">
-                <h3 class="text-3xl font-black text-slate-800 tracking-tighter mb-2">WWEAT</h3>
-                <p class="text-emerald-600 font-bold text-sm tracking-widest uppercase mb-6">Mutfak Asistanı</p>
+                <div class="bg-emerald-500 w-full aspect-square rounded-[3rem] rotate-3 absolute inset-0 opacity-10"></div>
                 
-                <div class="flex gap-2 justify-center items-center bg-white/80 backdrop-blur px-4 py-2 rounded-full border border-slate-100 shadow-sm">
-                    <span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span class="text-[10px] font-bold text-slate-500 uppercase tracking-tighter">Yayında • v1.2.0</span>
+                <div class="bg-white p-6 rounded-[2.5rem] shadow-2xl relative z-10 border border-slate-100">
+                    <div class="bg-gradient-to-b from-slate-50 to-white rounded-[2rem] h-[500px] flex flex-col items-center justify-center overflow-hidden p-8">
+                        
+                        <div class="relative group mb-8">
+                            <div class="absolute inset-0 bg-emerald-400 blur-3xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                            <img src="assets/icon.png" 
+                                 alt="WWEAT App Icon" 
+                                 class="relative z-10 w-32 h-32 md:w-44 md:h-44 app-icon-radius shadow-2xl border-4 border-white object-cover transform group-hover:rotate-6 transition-transform duration-500">
+                        </div>
+
+                        <div class="text-center z-10">
+                            <h3 class="text-3xl font-black text-slate-800 tracking-tighter mb-2">WWEAT</h3>
+                            <p class="text-emerald-600 font-bold text-sm tracking-widest uppercase mb-6">Mutfak Asistanı</p>
+                            
+                            <div class="flex gap-2 justify-center items-center bg-white/80 backdrop-blur px-4 py-2 rounded-full border border-slate-100 shadow-sm">
+                                <span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-tighter">Yayında • v1.2.0</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-        </div>
-    </div>
-</div>
         </div>
     </section>
 
@@ -131,9 +130,12 @@
     <footer id="aslanhan" class="bg-slate-900 text-slate-400 py-20 px-6">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center gap-10">
-                <div class="text-center md:text-left">
-                    <h2 class="text-white text-3xl font-black italic mb-2 tracking-tighter">Aslanhan Labs</h2>
-                    <p class="text-sm">Geleceğin mutfak teknolojilerini bugünden kodluyoruz.</p>
+                <div class="text-center md:text-left flex items-center gap-4">
+                    <img src="assets/icon.png" alt="Aslanhan Labs WWEAT" class="w-12 h-12 app-icon-radius opacity-80">
+                    <div>
+                        <h2 class="text-white text-3xl font-black italic mb-0 tracking-tighter">Aslanhan Labs</h2>
+                        <p class="text-sm">Geleceğin mutfak teknolojilerini bugünden kodluyoruz.</p>
+                    </div>
                 </div>
                 <div class="flex gap-8 text-sm font-semibold uppercase tracking-widest">
                     <a href="./app-ads.txt" class="hover:text-emerald-400 transition-colors">app-ads.txt</a>
