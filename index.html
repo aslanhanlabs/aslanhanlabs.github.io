@@ -123,6 +123,45 @@
             </div>
         </div>
     </footer>
+    <section id="veri-silme" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white rounded-[3rem] p-10 md:p-16 shadow-xl border border-slate-100 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-5">
+                    <i class="fas fa-user-slash text-9xl text-slate-900"></i>
+                </div>
+                
+                <div class="relative z-10">
+                    <span class="text-emerald-600 font-bold text-sm tracking-widest uppercase mb-4 block">Gizlilik ve Kontrol</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-6 leading-tight">Veri Silme Talebi</h2>
+                    
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        WWEAT olarak gizliliğinize önem veriyoruz. Uygulamamızda bir üyelik sistemi bulunmamakla birlikte, anlık bildirimler için kullanılan <strong>Cihaz Kimliği (Push Token)</strong> verilerinizin sunucularımızdan tamamen silinmesini talep edebilirsiniz.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-10">
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                            <h4 class="font-bold text-slate-800 mb-2 italic">Neler Silinir?</h4>
+                            <p class="text-sm text-slate-500">Cihazınıza atanan bildirim anahtarı ve varsa geçmiş bildirim kayıtlarınız veritabanımızdan kalıcı olarak kaldırılır.</p>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                            <h4 class="font-bold text-slate-800 mb-2 italic">Nasıl Talep Edilir?</h4>
+                            <p class="text-sm text-slate-500">Aşağıdaki butona tıklayarak bize bir e-posta göndermeniz yeterlidir. Talebiniz 48 saat içinde işleme alınacaktır.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 items-center">
+                        <a href="mailto:aslanhanlabs@gmail.com?subject=WWEAT Veri Silme Talebi" class="bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold hover:bg-black transition-all shadow-lg flex items-center gap-3">
+                            <i class="fas fa-envelope"></i>
+                            Talebi Gönder
+                        </a>
+                        <p class="text-xs text-slate-400 max-w-[200px] text-center sm:text-left italic">
+                            *E-posta içeriğinde cihaz modelinizi belirtmeniz süreci hızlandıracaktır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script>AOS.init({ duration: 800, once: true });</script>
 </body>
