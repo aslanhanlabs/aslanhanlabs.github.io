@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WWEAT | Mutfaktaki Akıllı Asistanınız</title>
-    
+    <title>WWEAT AI | Mutfaktaki Yapay Zeka Şefiniz</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -12,15 +13,44 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
-        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); }
-        .hero-shape { position: absolute; top: -10%; right: -5%; width: 500px; height: 500px; background: rgba(16, 185, 129, 0.1); border-radius: 50%; filter: blur(80px); z-index: -1; }
-        .play-btn { background: #202124; transition: transform 0.3s ease; }
-        .play-btn:hover { transform: translateY(-3px); background: #000; }
-        .feature-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .feature-card:hover { transform: scale(1.05); }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+        }
+
+        .ai-gradient {
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+        }
+
+        .hero-shape {
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 500px;
+            height: 500px;
+            background: rgba(16, 185, 129, 0.15);
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+        }
+
+        .feature-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
     </style>
 </head>
+
 <body class="bg-slate-50 text-slate-900">
 
     <div class="hero-shape"></div>
@@ -28,137 +58,179 @@
     <nav class="glass-nav sticky top-0 z-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2 font-black text-2xl tracking-tighter text-emerald-600">
-                WWEAT
+                WWEAT <span class="text-[10px] bg-emerald-100 px-2 py-0.5 rounded-md ml-1">AI</span>
             </div>
-            <div class="hidden md:flex gap-8 font-semibold text-slate-500 text-sm">
+            <div class="hidden md:flex gap-8 font-semibold text-slate-500 text-sm italic">
                 <a href="#ozellikler" class="hover:text-emerald-500 transition-colors">Özellikler</a>
-                <a href="#veri-silme" class="hover:text-emerald-500 transition-colors italic">Veri Silme</a>
-                <a href="#aslanhan" class="hover:text-emerald-500 transition-colors">Aslanhan Labs</a>
+                <a href="#sozlesmeler" class="hover:text-emerald-500 transition-colors">KVKK & Sözleşmeler</a>
+                <a href="#veri-silme" class="hover:text-emerald-500 transition-colors">Veri Silme</a>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.aslanhan.wweat" class="bg-emerald-500 text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-md hover:bg-emerald-600 transition-all">İndir</a>
+            <a href="https://play.google.com/store/apps/details?id=com.aslanhan.wweat"
+                class="bg-emerald-500 text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-lg hover:shadow-emerald-200 transition-all">Hemen
+                İndir</a>
         </div>
     </nav>
 
     <section class="pt-20 pb-32 px-6">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div data-aos="fade-right">
-                <span class="bg-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 inline-block">Mutfakta Devrim</span>
-                <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-8">
-                    Malzemeler <br><span class="text-emerald-500">Konuşsun.</span>
+                <div class="flex items-center gap-2 mb-6">
+                    <span
+                        class="bg-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase inline-block">Powered
+                        by Google Gemini™</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-8 tracking-tight">
+                    Yapay Zeka İle <br><span class="text-transparent bg-clip-text ai-gradient">Mutfakta Sihir.</span>
                 </h1>
                 <p class="text-lg text-slate-500 mb-10 leading-relaxed max-w-lg">
-                    Dolabı açtığında ne yapacağını bilmiyor musun? WWEAT ile elindeki malzemeleri seç, sana en lezzetli yolu göstersin.
+                    Dolabınızdaki malzemeleri seçin, WWEAT'in gelişmiş yapay zekası size özel tarifler yaratsın.
                 </p>
-                <a href="https://play.google.com/store/apps/details?id=com.aslanhan.wweat" class="play-btn text-white px-8 py-4 rounded-2xl inline-flex items-center gap-4 shadow-xl">
-                    <i class="fab fa-google-play text-3xl"></i>
-                    <div class="text-left">
-                        <p class="text-[10px] opacity-70 leading-none uppercase">Hemen Edin</p>
-                        <p class="text-xl font-bold leading-tight">Google Play</p>
-                    </div>
-                </a>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://play.google.com/store/apps/details?id=com.aslanhan.wweat"
+                        class="bg-slate-900 text-white px-8 py-4 rounded-2xl inline-flex items-center gap-4 shadow-2xl hover:bg-black transition-all">
+                        <i class="fab fa-google-play text-3xl"></i>
+                        <div class="text-left text-sm font-bold uppercase leading-none">Google Play'den Edin</div>
+                    </a>
+                </div>
             </div>
-
             <div class="relative" data-aos="zoom-in" data-aos-delay="200">
-                <div class="bg-emerald-500 w-full aspect-square rounded-[3rem] rotate-3 absolute inset-0 opacity-10"></div>
-                <div class="bg-white p-4 rounded-[3rem] shadow-2xl relative z-10 border border-slate-100">
-                    <div class="bg-gradient-to-b from-slate-50 to-white rounded-[2.5rem] h-[500px] flex items-center justify-center overflow-hidden">
-                        <div class="relative group w-full h-full flex items-center justify-center p-6">
-                            <div class="absolute w-64 h-64 bg-emerald-400 blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                            <img src="assets/icon.png" alt="WWEAT Logo" class="relative z-10 w-full h-full max-w-[420px] max-h-[420px] object-contain transform group-hover:scale-105 transition-transform duration-700 ease-out drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
-                        </div>
+                <div
+                    class="bg-white p-4 rounded-[3.5rem] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] relative z-10 border border-slate-100">
+                    <div class="bg-slate-50 rounded-[3rem] h-[500px] flex items-center justify-center overflow-hidden">
+                        <img src="assets/icon.png" alt="WWEAT Logo" class="w-64 h-64 object-contain drop-shadow-2xl">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="ozellikler" class="py-24 bg-white border-t border-slate-50">
-        <div class="max-w-6xl mx-auto px-6 text-center mb-16">
-            <h2 class="text-3xl font-black mb-4">Neden WWEAT?</h2>
-            <div class="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full"></div>
+    <section id="ozellikler" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div class="feature-card p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100" data-aos="fade-up">
+                <div
+                    class="w-14 h-14 ai-gradient text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg font-bold italic">
+                    AI</div>
+                <h3 class="text-xl font-bold mb-4 italic">Gemini™ Destekli</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Elinizdeki malzemelere göre anlık yaratılan benzersiz
+                    gurme deneyimler.</p>
+            </div>
+            <div class="feature-card p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100" data-aos="fade-up"
+                data-aos-delay="100">
+                <div
+                    class="w-14 h-14 bg-orange-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg">
+                    <i class="fas fa-user-check"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 italic">Hızlı Üyelik</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Google ile tek tıkla giriş yapın, premium özelliklere
+                    anında ulaşın.</p>
+            </div>
+            <div class="feature-card p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100" data-aos="fade-up"
+                data-aos-delay="200">
+                <div
+                    class="w-14 h-14 bg-blue-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg">
+                    <i class="fas fa-shield-heart"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 italic">Güvenli</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Şeffaf gizlilik politikası ile verileriniz bizim için
+                    öncelikli.</p>
+            </div>
         </div>
+    </section>
+
+    <section id="sozlesmeler" class="py-24 bg-slate-100">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="feature-card p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100" data-aos="fade-up">
-                    <div class="w-14 h-14 bg-emerald-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                        <i class="fas fa-magic text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Akıllı Algoritma</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Elinizdeki malzemelerle en yüksek uyumu yakalayan tarifleri saniyeler içinde listeler.</p>
+            <div class="text-center mb-16 italic">
+                <h2 class="text-3xl font-black italic">Yasal Bilgilendirmeler</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                    <h3 class="font-bold mb-4 italic">KVKK & Gizlilik</h3>
+                    <button onclick="openModal('kvkk.txt', 'KVKK & Gizlilik Politikası')"
+                        class="text-emerald-600 font-bold text-sm hover:underline">Tam Metni Oku</button>
                 </div>
-                <div class="feature-card p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-14 h-14 bg-orange-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                        <i class="fas fa-shield-virus text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Alerji Filtresi</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Özel durumlarınızı sisteme girin, size uygun olmayan hiçbir içeriği karşınıza çıkarmayalım.</p>
-                </div>
-                <div class="feature-card p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-14 h-14 bg-blue-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                        <i class="fas fa-shopping-basket text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Akıllı Alışveriş</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Eksik malzemeleri tek tıkla alışveriş listenize gönderin, hiçbir şeyi unutmayın.</p>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                    <h3 class="font-bold mb-4 italic">Kullanım Koşulları</h3>
+                    <button onclick="openModal('kullanim_kosullari.txt', 'Kullanım Koşulları')"
+                        class="text-blue-600 font-bold text-sm hover:underline">Tam Metni Oku</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="veri-silme" class="py-16 md:py-24 bg-slate-50 border-t border-slate-200">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            <div class="bg-white rounded-[2rem] md:rounded-[3rem] p-8 md:p-16 shadow-xl border border-slate-100 relative overflow-hidden text-center md:text-left">
-                <div class="absolute top-0 right-0 p-8 opacity-5 hidden md:block">
-                    <i class="fas fa-user-slash text-9xl text-slate-900"></i>
-                </div>
-                
-                <div class="relative z-10">
-                    <span class="text-emerald-600 font-bold text-xs tracking-widest uppercase mb-4 block">Gizlilik ve Kontrol</span>
-                    <h2 class="text-2xl md:text-4xl font-black text-slate-900 mb-6 leading-tight">Veri Silme Talebi</h2>
-                    
-                    <p class="text-sm md:text-base text-slate-600 mb-8 leading-relaxed">
-                        WWEAT olarak gizliliğinize önem veriyoruz. Uygulamamızda bir üyelik sistemi bulunmamakla birlikte, anlık bildirimler için kullanılan <strong>Cihaz Kimliği (Push Token)</strong> verilerinizin sunucularımızdan tamamen silinmesini talep edebilirsiniz.
-                    </p>
+    <div id="legalModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div
+            class="bg-white w-full max-w-2xl max-h-[80vh] rounded-[2.5rem] shadow-2xl relative z-10 flex flex-col overflow-hidden border border-slate-200">
+            <div class="p-8 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+                <h3 id="modalTitle" class="text-xl font-black italic text-slate-900">Başlık</h3>
+                <button onclick="closeModal()"
+                    class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center hover:bg-red-50 hover:text-red-500 transition-all">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="modalBody"
+                class="p-8 overflow-y-auto text-sm text-slate-600 leading-relaxed whitespace-pre-wrap font-medium italic text-left">
+                Yükleniyor...
+            </div>
+            <div class="p-6 border-t border-slate-100 text-center bg-slate-50">
+                <button onclick="closeModal()"
+                    class="bg-slate-900 text-white px-8 py-3 rounded-xl font-bold text-sm hover:bg-black transition-all">Anladım</button>
+            </div>
+        </div>
+    </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-10">
-                        <div class="bg-slate-50 p-5 md:p-6 rounded-2xl border border-slate-100">
-                            <h4 class="font-bold text-slate-800 mb-2 italic">Neler Silinir?</h4>
-                            <p class="text-xs md:text-sm text-slate-500">Cihazınıza atanan bildirim anahtarı ve varsa geçmiş kayıtlarınız kalıcı olarak kaldırılır.</p>
-                        </div>
-                        <div class="bg-slate-50 p-5 md:p-6 rounded-2xl border border-slate-100">
-                            <h4 class="font-bold text-slate-800 mb-2 italic">Nasıl Talep Edilir?</h4>
-                            <p class="text-xs md:text-sm text-slate-500">Aşağıdaki butona tıklayarak bize bir e-posta göndermeniz yeterlidir.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center md:justify-start">
-                        <a href="mailto:aslanhanlabs@gmail.com?subject=WWEAT Veri Silme Talebi" class="w-full sm:w-auto bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-black transition-all shadow-lg flex items-center justify-center gap-3">
-                            <i class="fas fa-envelope"></i>
-                            Talebi Gönder
-                        </a>
-                        <p class="text-[10px] md:text-xs text-slate-400 max-w-[200px] italic">
-                            *E-posta içeriğinde cihaz modelinizi belirtmeniz süreci hızlandıracaktır.
-                        </p>
-                    </div>
-                </div>
+    <section id="veri-silme" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center italic">
+            <div class="bg-slate-900 text-white p-12 rounded-[3rem] shadow-2xl relative overflow-hidden">
+                <h2 class="text-3xl font-black mb-6">Verilerinizi Kontrol Edin</h2>
+                <a href="mailto:aslanhanlabs@gmail.com?subject=WWEAT Veri Silme Talebi"
+                    class="bg-emerald-500 hover:bg-emerald-600 text-white px-10 py-4 rounded-2xl font-bold transition-all inline-block">Hesabımı/Verilerimi
+                    Sil</a>
             </div>
         </div>
     </section>
 
-    <footer id="aslanhan" class="bg-slate-900 text-slate-400 py-20 px-6">
-        <div class="max-w-6xl mx-auto text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-10">
-            <div>
-                <h2 class="text-white text-3xl font-black italic mb-2 tracking-tighter">Aslanhan Labs</h2>
-                <p class="text-sm">Yenilikçi yazılım çözümleri.</p>
-            </div>
-            <div class="flex gap-8 text-xs font-bold uppercase tracking-widest">
-                <a href="./app-ads.txt" class="hover:text-emerald-400">app-ads.txt</a>
-                <a href="https://docs.google.com/document/d/1NhY-E5XUBGow4OJfOAmUpXv08E4QWylOvdhQ8us6Oac/edit?tab=t.0" class="hover:text-emerald-400">Gizlilik</a>
-                <a href="https://play.google.com/store/apps/details?id=com.aslanhan.wweat" class="hover:text-emerald-400">Destek</a>
-                <a href="keywords.txt" class="text-[10px] text-slate-800 opacity-20 hover:opacity-100 transition-opacity">SEO Index</a>
-            </div>
-        </div>
-    </footer>
+    <footer id="aslanhan" class="bg-slate-50 py-20 px-6 border-t border-slate-200 italic font-bold">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <h2 class="text-slate-900 text-2xl font-black tracking-tighter">Aslanhan Labs</h2>
+            <div class="flex gap-6 text-xs text-slate-400 italic">
+                <a href="./app-ads.txt" class="hover:text-emerald-500">Ads.txt</a>
+                <a href="mailto:aslanhanlabs@gmail.com" class="hover:text-emerald-500">Destek</a>
+            </div>
+        </div>
+    </footer>
 
-    <script>AOS.init({ duration: 800, once: true });</script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // MODAL FONKSİYONLARI (BU KISIM EKSİKTİ)
+        async function openModal(file, title) {
+            const modal = document.getElementById('legalModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalBody = document.getElementById('modalBody');
+
+            modalTitle.innerText = title;
+            modalBody.innerText = "Yükleniyor...";
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+
+            try {
+                // Dosyadan veri çekme
+                const response = await fetch(file);
+                if (!response.ok) throw new Error('Dosya bulunamadı');
+                const text = await response.text();
+                modalBody.innerText = text;
+            } catch (error) {
+                modalBody.innerText = "Hata: Metin dosyası (" + file + ") sunucuda bulunamadı veya erişilemiyor.";
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('legalModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+    </script>
 </body>
+
 </html>
