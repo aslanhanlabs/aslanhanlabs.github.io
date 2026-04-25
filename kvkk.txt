@@ -1,0 +1,40 @@
+Privacy Policy
+Effective Date: 2026-04-25
+This privacy policy applies to the WWEAT app (hereby referred to as "Application") for mobile devices created by Muhammet Can Aslanhan (Aslanhan Labs) (hereby referred to as "Service Provider"). The Application is offered as a Free service with optional paid features (subscriptions and credit-based usage limits).
+1. Information Collection and Use
+The Application collects information to provide its core AI-driven services and manage your account. This includes:
+Authentication Data (Google Sign-In): If you choose to log in via Google, we collect your email address, name, and profile picture. This data is used to create your unique user profile, sync your subscription status across devices, and personalize your experience.
+Device Information: Your device's IP address, operating system, and device type.
+Unique Device Identifiers: We collect identifiers (such as Android ID/SSAID) to manage push notification tokens and track usage limits for non-logged-in users.
+Purchase Information: To manage subscriptions and credit limits, we track your Transaction ID, Order ID, and Entitlement Status.
+2. In-App Purchases & Subscriptions
+To provide premium features and AI tokens, the Application utilizes the Google Play Billing System.
+Payments: All financial transactions are handled securely by Google. The Service Provider does not collect, see, or store your credit card or bank details.
+Subscriptions: Subscriptions automatically renew at the end of each billing cycle unless cancelled by the user.
+Management: You can manage or cancel your subscriptions at any time through the "Subscriptions" section on the Google Play Store.
+Usage Limits (Tokens): One-time purchases for recipe generation tokens are linked to your User ID (if logged in) or Device Identifier to ensure they are correctly credited.
+3. Generative AI & Recipe Generation
+The Application utilizes Google Gemini™ AI to generate culinary content.
+Data Transmission: Selected ingredients and dietary preferences are transmitted to the Google Gemini API to generate recipes.
+Privacy of AI Data: Data sent to the AI service is used solely for real-time generation. According to our integration standards, this data is not used by the Service Provider to train underlying models.
+Disclaimer: AI-generated recipes may contain inaccuracies. Users must verify all ingredients, particularly regarding allergies or medical dietary restrictions.
+4. Data Deletion & Account Requests
+We respect your right to control your data.
+Account Deletion: Users can request the permanent deletion of their account and all associated data (including purchase logs and profile info) by contacting us.
+How to request: Send an email to aslanhanlabs@gmail.com.
+Response Time: Your data will be permanently removed from our databases (Supabase) within 48-72 hours.
+5. Third-Party Services
+To provide a seamless experience, we integrate the following services:
+Google Play Services & Auth: For secure login and billing.
+Google Gemini API: For AI recipe generation.
+Supabase: Secure backend for database and authentication.
+Cloudinary: Image hosting.
+Google AdMob: May collect identifiers for personalized or non-personalized advertisements.
+6. Security
+We implement procedural and electronic safeguards, including SSL/TLS encryption during transit, to protect your personal information and purchase history.
+7. Changes
+This policy may be updated periodically. Continued use of the Application signifies your acceptance of these terms.
+8. Contact Us
+For any questions regarding privacy or data deletion, please contact: Email: aslanhanlabs@gmail.com
+
+
